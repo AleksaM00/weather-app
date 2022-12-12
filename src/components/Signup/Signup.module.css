@@ -1,0 +1,119 @@
+.signup {
+  max-width: 110rem;
+  margin: 10rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.88);
+}
+
+.signupLeft {
+  flex: 0 0 40%;
+}
+
+.signupLeft img {
+  width: 100%;
+  height: 60rem;
+}
+
+.signupRight {
+  position: relative;
+  flex: 0 0 60%;
+  height: 100%;
+}
+
+.signupRight h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 4rem;
+}
+
+.signupRight form {
+  width: 60%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signupRight form label {
+  display: block;
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.signupRight form input {
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 1rem 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #fff;
+}
+.signupRight form input:focus {
+  box-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.4);
+}
+.signupRight form input::placeholder {
+  font-size: 1.8rem;
+}
+
+.signupRight form button {
+  width: 100%;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: rgb(14, 135, 234);
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+.signupRight form a {
+  color: rgb(53, 53, 185);
+  display: block;
+  letter-spacing: 1px;
+  margin-top: 2.2rem;
+  font-size: 1.7rem;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  background-color: rgb(117, 50, 50);
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 75em) {
+  .signup {
+    margin: 10rem 3rem;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  .signupLeft {
+    display: none;
+  }
+
+  .signupRight {
+    padding: 2rem;
+    flex: 0 0 100%;
+    margin: 0 auto;
+  }
+}

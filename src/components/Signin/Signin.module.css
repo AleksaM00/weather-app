@@ -1,0 +1,131 @@
+.signin {
+  max-width: 110rem;
+  margin: 10rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.88);
+}
+
+.signinLeft {
+  flex: 0 0 40%;
+}
+
+.signinLeft img {
+  width: 100%;
+  height: 60rem;
+}
+
+.signinRight {
+  flex: 0 0 60%;
+  height: 60rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signinRight h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+}
+
+.signinRight form {
+  width: 60%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signinRight form label {
+  display: block;
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.signinRight form input {
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 1rem 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #fff;
+}
+.signinRight form input:focus {
+  box-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.4);
+}
+.signinRight form input::placeholder {
+  font-size: 1.8rem;
+}
+
+.signinRight .actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signinRight form button {
+  width: 100%;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: rgb(14, 135, 234);
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+.signinRight form a {
+  color: rgb(53, 53, 185);
+  display: block;
+  letter-spacing: 1px;
+  margin-top: 2.2rem;
+  font-size: 1.7rem;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.error {
+  color: red;
+  background-color: rgb(117, 50, 50);
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 75em) {
+  .signin {
+    margin: 10rem 3rem;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  .signinLeft {
+    display: none;
+  }
+
+  .signinRight {
+    padding: 2rem;
+    flex: 0 0 100%;
+    margin: 0 auto;
+  }
+}

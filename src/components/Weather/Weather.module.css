@@ -1,0 +1,191 @@
+.weather {
+  width: 100%;
+}
+
+.weather form {
+  max-width: 70rem;
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.7);
+}
+
+.weather input {
+  text-transform: capitalize;
+  flex-grow: 1;
+  padding: 1rem 0;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  font-size: 2rem;
+}
+.weather input::placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+
+.weather button {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-left: 1rem;
+  cursor: pointer;
+  background: linear-gradient(120deg, rgb(88, 76, 218), rgb(175, 72, 44));
+}
+
+.mainWeather {
+  max-width: 70rem;
+  height: 40rem;
+  margin: 3rem auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.mainWeather .country {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.mainWeather .date {
+  text-align: center;
+  color: #ccc;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.mainWeather .temp {
+  color: #fff;
+  font-size: 6rem;
+  letter-spacing: 2px;
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  transform: translateX(-50%);
+}
+
+.mainWeather .description {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  color: #fff;
+  text-align: center;
+}
+
+.mainWeather .descriptionMain {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.mainWeather .max,
+.mainWeather .min {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+}
+
+.mainWeather .weatherImage {
+  width: 10rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #111;
+  border-radius: 10rem;
+}
+
+.mainWeather .timezone {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.mainWeather .feelsLike {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.weatherDesc {
+  max-width: 70rem;
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weatherDesc .weatherDescBox {
+  flex: 0 0 22%;
+  height: 15rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.weatherDesc .weatherDescBox p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.weatherDesc .weatherDescBox h2 {
+  font-size: 2.5rem;
+}
+
+.error {
+  width: 70rem;
+  margin: 10rem auto;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: red;
+  background-color: rgb(117, 50, 50);
+  text-align: center;
+  padding: 3rem;
+}
+
+@media screen and (max-width: 75em) {
+  .weather {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  .mainWeather .temp {
+    left: 15%;
+  }
+
+  .mainWeather .timezone {
+    left: 1%;
+  }
+  .mainWeather .feelsLike {
+    right: 1%;
+  }
+
+  .weatherDesc {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .weatherDesc .weatherDescBox {
+    width: 100%;
+  }
+}
